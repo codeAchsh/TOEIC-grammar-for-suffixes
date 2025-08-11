@@ -1,0 +1,14 @@
+# OS・エディタ関連
+.DS_Store
+Thumbs.db
+*.log
+
+# Node.js関連（未使用でも念のため）
+node_modules/
+npm-debug.log*
+
+# VSCode関連
+.vscode/
+
+# その他
+.env
