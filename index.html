@@ -8,10 +8,10 @@
   <!-- ページの説明 -->
   <meta name="description" content="Learn English suffixes and their grammatical roles in a calm, intuitive space. / 英語の語尾と品詞の関係を、穏やかで感覚的に学べる空間です。" />
 
-  <!-- SEO関連（description, keywords） -->
+  <!-- SEO関連 -->
   <meta name="keywords" content="English suffixes, TOEIC, grammar, parts of speech, intuitive learning, calm design, suffix classification, 英語語尾, TOEIC対策, 品詞, 文法, 穏やかな学習, 語尾分類" />
 
-  <!-- SNSでの表示を整える（OpenGraph）-->
+  <!-- SNS表示（OpenGraph） -->
   <meta property="og:title" content="TOEIC Grammar: Learn English Suffixes / TOEIC語尾で品詞を学ぶ" />
   <meta property="og:description" content="Explore English suffixes and their grammatical roles through a gentle, focused interface. / 穏やかで集中しやすい画面で、英語語尾と品詞の関係を学べます。" />
   <meta property="og:image" content="https://github.com/codeAchsh/TOEIC-grammar-for-suffixes/blob/main/images/thumbnail.png" />
@@ -20,72 +20,95 @@
 
   <link rel="shortcut icon" href="images/icon.ico" />
   <link rel="stylesheet" href="assets/style.css">
-  
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9F2M3R8ESH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics: 同意後にのみ読み込み -->
+  <script>
+    function loadGoogleAnalytics() {
+      const script = document.createElement('script');
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-9F2M3R8ESH";
+      script.async = true;
+      document.head.appendChild(script);
 
-  gtag('config', 'G-9F2M3R8ESH');
-</script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
 
+      gtag('js', new Date());
+      gtag('config', 'G-9F2M3R8ESH');
+    }
+  </script>
 </head>
 <body>
   <h1>TOEIC -語尾で品詞を学ぶ-</h1>
 
-    <div class="info-box">
+  <div class="info-box">
     <h2>品詞の説明</h2>
     <ul>
-        <li><strong>名詞（noun）：</strong>主語、他動詞の目的語、前置詞の目的語、補語になる。</li>
-        <li><strong>動詞（verb）：</strong>述語動詞になる。</li>
-        <li><strong>形容詞（adjective）：</strong>補語になるか名詞を修飾する。</li>
-        <li><strong>副詞（adverb）：</strong>常に修飾語で名詞以外を修飾する。</li>
+      <li><strong>名詞（noun）：</strong>主語、他動詞の目的語、前置詞の目的語、補語になる。</li>
+      <li><strong>動詞（verb）：</strong>述語動詞になる。</li>
+      <li><strong>形容詞（adjective）：</strong>補語になるか名詞を修飾する。</li>
+      <li><strong>副詞（adverb）：</strong>常に修飾語で名詞以外を修飾する。</li>
     </ul>
-    </div>
-    
-    <div class="info-box">
-        <h2>語尾の分類</h2>
-        <ul class="suffix-list">
-            <li><strong>名詞（noun）語尾：</strong> <code>-tion</code>, <code>-sion</code>, <code>-ment</code>, <code>-ness</code>, <code>-ity</code>, <code>-ance</code>, <code>-ence</code>, <code>-ship</code>, <code>-hood</code>, <code>-ism</code>, <code>-age</code>, <code>-al</code>, <code>-sis</code>, <code>-cy</code></li>
-            <li><strong>動詞（verb）語尾：</strong> <code>-ize</code>, <code>-ise</code>, <code>-ate</code>, <code>-en</code>, <code>-fy</code></li>
-            <li><strong>形容詞（adjective）語尾：</strong> <code>-ive</code>, <code>-able</code>, <code>-ible</code>, <code>-ous</code>, <code>-ful</code>, <code>-less</code>, <code>-ic</code>, <code>-al</code>, <code>-y</code>, <code>-ish</code>, <code>-cial</code></li>
-            <li><strong>副詞（adverb）語尾：</strong> <code>-ly</code>, <code>-ward</code>, <code>-wise</code></li>
-        </ul>
-    </div>
+  </div>
 
+  <div class="info-box">
+    <h2>語尾の分類</h2>
+    <ul class="suffix-list">
+      <li><strong>名詞（noun）語尾：</strong> <code>-tion</code>, <code>-sion</code>, <code>-ment</code>, <code>-ness</code>, <code>-ity</code>, <code>-ance</code>, <code>-ence</code>, <code>-ship</code>, <code>-hood</code>, <code>-ism</code>, <code>-age</code>, <code>-al</code>, <code>-sis</code>, <code>-cy</code></li>
+      <li><strong>動詞（verb）語尾：</strong> <code>-ize</code>, <code>-ise</code>, <code>-ate</code>, <code>-en</code>, <code>-fy</code></li>
+      <li><strong>形容詞（adjective）語尾：</strong> <code>-ive</code>, <code>-able</code>, <code>-ible</code>, <code>-ous</code>, <code>-ful</code>, <code>-less</code>, <code>-ic</code>, <code>-al</code>, <code>-y</code>, <code>-ish</code>, <code>-cial</code></li>
+      <li><strong>副詞（adverb）語尾：</strong> <code>-ly</code>, <code>-ward</code>, <code>-wise</code></li>
+    </ul>
+  </div>
 
-
-    <div class="button-group">
-        <button onclick="showWords('noun')">名詞</button>
-        <button onclick="showWords('verb')">動詞</button>
-        <button onclick="showWords('adj')">形容詞</button>
-        <button onclick="showWords('adv')">副詞</button>
-    </div>
+  <div class="button-group">
+    <button onclick="showWords('noun')">名詞</button>
+    <button onclick="showWords('verb')">動詞</button>
+    <button onclick="showWords('adj')">形容詞</button>
+    <button onclick="showWords('adv')">副詞</button>
+  </div>
 
   <div id="word-list" class="word-list">
     <textarea placeholder="ボタンをクリックすると、ここに例文が表示されます"></textarea>
   </div>
 
   <footer>
-      <div class="ad-template-link">
-        <p>🧁 Links to our works</p>
-        <div>
-          <a href="https://codeachsh.github.io/All-template-Japanese-/" target="_blank">
-            📦 Click here for a list of useful templates.！
-          </a>
-        </div>
-        <div>
-          <a href="https://note.com/chill_2525" target="_blank" class="note-link">
-            ✨ Blogs, templates, and growth records are being compiled and published. → note.com/chill_2525
-          </a>
-        </div>
+    <div class="ad-template-link">
+      <p>🧁 Links to our works</p>
+      <div>
+        <a href="https://codeachsh.github.io/All-template-Japanese-/" target="_blank">
+          📦 Click here for a list of useful templates.！
+        </a>
       </div>
-      <p>&copy; 2025 Chill_2525 | code.achsh@gmail.com</p>
-    </footer>
-  
+      <div>
+        <a href="https://note.com/chill_2525" target="_blank" class="note-link">
+          ✨ Blogs, templates, and growth records are being compiled and published. → note.com/chill_2525
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2025 Chill_2525 | code.achsh@gmail.com</p>
+  </footer>
+
+  <!-- Consent Banner -->
+  <div id="consent-banner" style="position:fixed;bottom:0;left:0;right:0;background:#f8f8f8;padding:1em;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);z-index:9999;">
+    このサイトは分析のためにCookieを使用します。<button onclick="acceptConsent()">同意する</button>
+  </div>
+
+  <script>
+    function acceptConsent() {
+      localStorage.setItem('gentleConsent', 'true');
+      document.getElementById('consent-banner').style.display = 'none';
+      loadGoogleAnalytics();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const consent = localStorage.getItem('gentleConsent');
+      if (consent === 'true') {
+        document.getElementById('consent-banner').style.display = 'none';
+        loadGoogleAnalytics();
+      }
+    });
+  </script>
 
   <script src="js/script.js"></script>
 </body>
