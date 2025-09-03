@@ -66,7 +66,6 @@ h2{
   width: 100%;
   height: auto;
   padding: 12px;
-  /* font-size: 1rem; */
   border: none;
   box-sizing: border-box;
   margin-top: 12px;
@@ -85,6 +84,31 @@ h2{
   padding: 2px 4px;
   border-radius: 3px;
 }
+
+.toeic-top{
+    margin-top: 5rem;
+    text-align: center;
+}
+.toeic-top a{
+    text-decoration: none;
+}
+.top-button{
+    /* margin-top: 3rem;
+    text-align: center; */
+    padding: 10px 15px;
+    background-color: #2c7a7b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}    
+.top-button:hover{
+    background-color: #e0f7f5;
+    color: #222;
+}
+
 
 footer {
   width: 100%;
